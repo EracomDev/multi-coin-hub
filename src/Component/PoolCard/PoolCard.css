@@ -1,0 +1,62 @@
+.poolCard {
+    border-radius: 5px;
+    padding: 20px 10px 15px 20px;
+    text-align: center;
+    /* background: linear-gradient(45deg, #36466a, transparent); */
+    background: linear-gradient(45deg, #36466a, #151d30);
+
+}
+
+.cardImg {
+    width: 40px;
+    height: 40px;
+}
+
+.poolCard i {
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    animation: mymove 5s linear infinite;
+
+}
+
+@keyframes mymove {
+    100% {
+        transform: rotate(360deg);
+        color: #fff;
+    }
+}
+
+.poolCard i,
+.poolCard div,
+.poolCard p {
+    color: #fff;
+
+}
+
+.cardImg {
+    margin: auto 0px;
+}
+
+.cardText {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.cardText p {
+    margin: 0;
+    color: #23d551;
+    text-transform: uppercase;
+    color: #e4af14;
+    font-weight: 600;
+}
+
+.cardText i {
+    display: flex;
+    align-items: center;
+}
+
+.daiIcon {
+    width: 20px;
+}

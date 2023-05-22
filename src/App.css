@@ -1,0 +1,380 @@
+.App {
+  text-align: center;
+}
+
+:root {
+  --bodyColor: #0B1327;
+  --containerColor: #52525269;
+  --colorPrimary: #bfa152;
+  --colorPrimaryTheme: #D8BC6B;
+  --colorSecondary: #D8BC6B;
+  --textColor: #C2CCCB;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(20, 19, 19, 0.87);
+  z-index: 99;
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 0;
+}
+
+.loader>div {
+  display: flex;
+  justify-content: center
+}
+
+.loader p {
+  color: var(--colorPrimary);
+  position: relative;
+  top: 55px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #bfa0522a;
+  border-top-color: var(--colorPrimary);
+  border-left-color: var(--colorPrimary);
+  animation: rotate 0.5s linear infinite;
+  position: absolute;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.heading {
+  color: var(--colorPrimary);
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-image: linear-gradient(to right,
+      #462523 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.tableSection tbody tr:nth-child(odd) {
+  background: #0b132769 !important;
+}
+
+.tableSection {
+  padding: 20px 20px !important;
+}
+
+.tableSection th {
+  color: orange;
+  padding: 15px;
+}
+
+.tableSection td {
+  color: var(--textColor);
+  padding: 10px;
+}
+
+.tableSection {
+  width: 100%;
+  text-align: center;
+  background: var(--bgColor);
+  margin-bottom: 30px;
+}
+
+.actionBtn {
+  border: none;
+  background: orange;
+  border-radius: 20px;
+  color: #141B2D;
+  font-weight: 700;
+  padding: 3px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actionBtn:hover {
+  filter: brightness(0.7);
+}
+
+@media (max-width: 768px) {
+  .mb10 {
+    margin-bottom: 10px !important;
+  }
+
+  .mb20 {
+    margin-bottom: 20px !important;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+}
+
+/* ------------------------------------------------------ */
+
+/* KEYFRAMES */
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(.5, .5, .5, 360deg);
+  }
+
+  to {
+    transform: rotate3d(0deg);
+  }
+}
+
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes configure-xclockwise {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(-135deg);
+  }
+
+  75% {
+    transform: rotate(-225deg);
+  }
+
+  100% {
+    transform: rotate(-315deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: .25;
+    transform: scale(.75);
+  }
+}
+
+/* GRID STYLING */
+
+* {
+  box-sizing: border-box;
+}
+
+.spinner-box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242a3ac9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+/* SOLAR SYSTEM */
+
+.solar-system {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fafbfC;
+  border-radius: 50%;
+}
+
+.earth-orbit {
+  width: 165px;
+  height: 165px;
+  -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.venus-orbit {
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 7.4s linear 0s infinite;
+}
+
+.mercury-orbit {
+  width: 90px;
+  height: 90px;
+  -webkit-animation: spin 3s linear 0s infinite;
+}
+
+.planet {
+  position: absolute;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3ff9dc;
+}
+
+.sun {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffab91;
+}
+
+.leo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.blue-orbit {
+  width: 165px;
+  height: 165px;
+  border: 1px solid #91daffa5;
+  -webkit-animation: spin3D 3s linear .2s infinite;
+}
+
+.green-orbit {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #91ffbfa5;
+  -webkit-animation: spin3D 2s linear 0s infinite;
+}
+
+.red-orbit {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ffca91a5;
+  -webkit-animation: spin3D 1s linear 0s infinite;
+}
+
+.white-orbit {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  -webkit-animation: spin3D 10s linear 0s infinite;
+}
+
+.w1 {
+  transform: rotate3D(1, 1, 1, 90deg);
+}
+
+.w2 {
+  transform: rotate3D(1, 2, .5, 90deg);
+}
+
+.w3 {
+  transform: rotate3D(.5, 1, 2, 90deg);
+}
+
+.three-quarter-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fb5b53;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin .5s linear 0s infinite;
+}

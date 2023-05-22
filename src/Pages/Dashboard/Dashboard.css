@@ -1,0 +1,246 @@
+.topColor {
+    width: 100%;
+    height: 120px;
+    background: var(--topNav);
+    padding-left: 10px;
+}
+
+.topColor h4 {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.deposit img {
+    width: 80%;
+
+}
+
+.deposit img {
+    width: 100%;
+}
+
+.mainDiv {
+    /* background: #fff; */
+    padding: 30px;
+
+}
+
+.btnPrimary {
+    background: var(--bgPrimary);
+    color: var(--textColor);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.btnPrimary:hover {
+    opacity: 0.7;
+}
+
+.detailCard {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #80808042;
+    padding: 10px;
+}
+
+.detailCard i {
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.detailCard p {
+    margin: 0;
+    margin-right: 10px;
+    color: #ffffff;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.detailCard span {
+    color: #23d551 !important;
+    white-space: nowrap;
+}
+
+.detailCard span>i {
+    margin: 0;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+#detailCardContainer {
+    background: var(--bgColor);
+    padding: 20px 10px;
+    border-radius: 10px;
+
+}
+
+.bankCard {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: var(--bgColor);
+}
+
+.bankCardContainer {
+    /* background: var(--bgColor); */
+    border-radius: 10px;
+}
+
+.rewardMainDiv {
+    background: var(--topNav);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.rewardInnerDiv p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.rewardInnerDiv i {
+    font-size: 55px;
+    margin-right: 10px;
+    color: orange;
+}
+
+.rewardInnerDiv i:hover {
+    transform: scale(1.1);
+}
+
+.inputPrimary {
+    width: 100%;
+    padding: 7px 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: var(--bgPrimary);
+    color: white;
+    font-weight: 400;
+
+}
+
+.bankCardImgDiv {
+    width: 105px;
+    margin-right: 20px;
+}
+
+.bankCardImgDiv img {
+    width: 100%;
+}
+
+.linkDiv {
+    position: relative;
+}
+
+#copyIcon {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    color: white;
+    top: 0px;
+    font-size: 22px;
+}
+
+#linkIcon {
+    position: absolute;
+    right: 45px;
+    cursor: pointer;
+    color: white;
+    top: 0px;
+    font-size: 22px;
+
+}
+
+.card.card-body {
+    background-color: #1f2940;
+}
+
+.depositHeading {
+    color: #bbbec5;
+    font-size: 20px;
+    font-family: math;
+}
+
+label {
+    color: #bbbec5;
+}
+
+.form-group>label {
+    width: 100%;
+}
+
+.form-group>input:focus {
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(255, 166, 0, 0.336)
+}
+
+.form-group>input {
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: #141b2d6e;
+    outline: none;
+    margin-top: 4px;
+    color: white;
+
+}
+
+button.btn.btn-warning.depositBtn {
+    width: 100%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background: orange;
+    border-color: transparent;
+    color: #141B2D;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+/* .rewardInnerDiv {
+    display: flex;
+    align-items: center;
+} */
+#error {
+    font-size: 15px;
+    color: rgb(202, 45, 45);
+    margin: 0;
+}
+
+#tree {
+    width: 115px;
+    margin: auto;
+}
+
+#note {
+    font-size: 11px;
+    color: white;
+    margin: 0;
+    margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+    #tree {
+        width: 100px;
+    }
+}

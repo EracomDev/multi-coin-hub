@@ -1,0 +1,79 @@
+#myTeamCol {
+    text-align: center;
+    border: 1px solid #a59f9f29;
+    overflow-x: scroll;
+    padding: 10px
+}
+
+#myTeamCol h1 {
+    color: orange !important;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+#myTeamCol p {
+    color: #afaaaa;
+    margin: 0;
+    font-size: 15px;
+}
+
+#myTeamRow {
+    background: var(--bgColor);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.tableOuter {
+    background: var(--bgColor);
+    padding: 3px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.myTeamTable {
+    overflow: auto !important;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    /* border: 1px solid #ccc !important; */
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow: auto !important;
+    color: #555;
+    margin: 0;
+}
+
+th {
+    background: var(--topNav);
+    color: #fff;
+    font-weight: 400;
+}
+
+.noData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.noData i {
+    margin-left: 5px;
+}
+
+@media (max-width: 900px) {
+    #myTeamCol h1 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

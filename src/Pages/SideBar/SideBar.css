@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --sidebarColor: #1F2940;
+    /* --sidebarColor: #fff; */
+    --bgColor: #1F2940;
+    --textColor: #959aa3;
+    --sidebarTextColor: #fff;
+    /* --sidebarTextColor: #25476A; */
+    /* --activebg: orange; */
+    /* --activebg: #25476A; */
+    --bgPrimary: #141B2D;
+    --activebg: #141B2D;
+    --topNav: #1F2940;
+    --one: #AB47BC;
+    --two: #9FCC2E;
+    --three: #FA9F1B;
+    --four: #03A9F4;
+}
+
+
+body,
+html {
+    box-sizing: border-box;
+    background: var(--sidebarColor) !important;
+}
+
+#sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: var(--sidebarColor);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: left 0.5s;
+    z-index: 99;
+}
+
+
+#logoDiv {
+    background: var(--topNav);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#logoDiv i {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    display: none
+}
+
+@media (max-width: 900px) {
+    #logoDiv i {
+        display: block;
+    }
+}
+
+#logoDiv img {
+    width: auto;
+    height: 60px;
+}
+
+.sideItems {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.sideItems h5,
+.sideItems i {
+    color: var(--sidebarTextColor);
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.sideItems i {
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+#sideItemSection {
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.sideItems:hover {
+    background: linear-gradient(45deg, #36466a, #151d30);
+}
+
+.sideItems:hover h5,
+.sideItems:hover i {
+    color: white;
+}
+
+.active div {
+    background: linear-gradient(45deg, #36466a, #151d30);
+}
+
+.active h5,
+.active i {
+    color: white
+}
+
+#circle {
+    width: 150px;
+    height: 150px;
+    background-color: #5C4FA1;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -40px;
+    left: -59px;
+}
+
+#circle2 {
+    width: 150px;
+    height: 150px;
+    /* background: #3964AE; */
+    border-radius: 50%;
+    position: absolute;
+    bottom: -84px;
+    left: 0px;
+}
+
+#circle {
+    background: linear-gradient(-45deg, #5C4FA1, #05c7ce88, #25476A, #f3ef14);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+}
+
+#circle2 {
+    background: linear-gradient(-45deg, #5C4FA1, #31338d, #23a6d5, #f3ef14);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#rightSection {
+    /* margin-left: 240px; */
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+::-webkit-scrollbar {
+    background: rgb(19, 19, 19);
+    width: 10px;
+}
+
+::-webkit-scrollbar {
+    background: #25304d;
+    width: 5px !important;
+    height: 1.5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3a496d;
+    border-radius: 30px;
+}
+
+/* 
+*::-webkit-scrollbar {
+    display: none;
+} */
+
+.topNav {
+    width: 100%;
+    height: 60px;
+    background: var(--topNav);
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 10;
+}
+
+.topNav i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+#contentSection {
+    min-height: 100vh;
+}
+
+.topNavRight h3 {
+    color: #fff;
+    margin: 0;
+    margin-right: 20px;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+
+}
+
+.setting {
+    border-radius: 5px 0px 5px 5px;
+    background: var(--bgPrimary);
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    transition: all 0.2s;
+}
+
+.setting>p>i {
+    font-size: 17px;
+}
+
+.setting>p {
+    cursor: pointer;
+    margin: 0;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.setting>p:hover {
+    background: var(--bgColor);
+}
+
+#CopiedMsg {
+    background: var(--activebg);
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    font-size: 25px;
+    transition: 0.5s all;
+    top: -100px;
+    z-index: 99;
+}

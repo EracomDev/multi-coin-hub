@@ -1,0 +1,95 @@
+.depositCard {
+    display: flex;
+    background: var(--bgPrimary);
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--textColor);
+    ;
+}
+
+.depositCard p {
+    margin: 0;
+    color: var(--textColor);
+}
+
+.depositCard i {
+    font-size: 35px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--textColor);
+}
+
+.inputBusd {
+    display: flex;
+}
+
+.inputBusd {
+    display: flex;
+    margin: 10px 0;
+}
+
+.inputBusd input {
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: var(--bgPrimary);
+    color: white;
+    font-weight: 400;
+    padding: 3px 10px;
+    width: 100%;
+}
+
+.inputBusd i {
+    margin-top: -5px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.inputBusd p {
+    color: var(--textColor);
+    margin: 0;
+    margin-right: 20px !important;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.depositContainer {
+    background: var(--topNav);
+    border-radius: 10px;
+    color: var(--textColor);
+}
+
+.btnDeposit {
+    width: 100%;
+    background: var(--bgPrimary);
+    border: none;
+    color: var(--textColor);
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.5s;
+    background: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btnDeposit:hover {
+    overflow: hidden;
+    transform: scale(1.01);
+}
+
+.depositHeading {
+    color: #fff;
+    font-size: 39px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.depositContainer {
+    padding: 1rem;
+}

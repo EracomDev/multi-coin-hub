@@ -1,0 +1,56 @@
+.splitAccountRow {
+    background: var(--bgColor);
+    padding: 10px 10px 30px 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.splitAccountLeftCol img {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.btnIcon {
+    background: var(--topNav);
+    padding: 5px 40px 5px 20px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    margin: 10px 10px 0 0;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.btnIcon i {
+    position: absolute;
+    transition: all 0.5s;
+    margin-left: 15px;
+}
+
+.btnIcon:hover i {
+    transform: rotate(360deg);
+
+}
+
+.splitAccountDiv>h4 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.splitAccountRightCol p {
+    margin: 0px;
+    color: #ccc;
+}
+
+.splitAccountRightCol label {
+    color: var(--textColor);
+    margin-top: 10px;
+}
+
+.splitAccountContainer.container {
+    padding: 30px;
+}

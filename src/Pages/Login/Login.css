@@ -1,0 +1,32 @@
+.loginBtn {
+    background: linear-gradient(to right,
+            #96792D, #C5A454, #F8E895, #D9BB6E, #F3D67F, #A88D46);
+    color: rgb(0, 0, 0) !important;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 13px 30px;
+    border: none;
+    transition: all 0.4s;
+    text-transform: uppercase;
+    margin: 20px 0;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+.loginBtn:hover {
+    background: transparent;
+    color: var(--colorPrimary) !important;
+    border-color: var(--colorPrimary);
+}
+
+/* .connectLoginLeft h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+} */
+
+.connectLoginRight p {
+    margin-bottom: 15px;
+}

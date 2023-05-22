@@ -1,0 +1,266 @@
+.connectWalletContainer {
+    color: white
+}
+
+.connectWalletContainer img {
+    width: 70px;
+}
+
+.connectLeft,
+.connectRegisterLeft {
+    text-align: center;
+}
+
+.connectLeft p {
+    color: var(--textColor);
+}
+
+.connectLeft span,
+.connectRegisterLeft span {
+    color: red;
+}
+
+.connectRight,
+.connectRegisterRight {
+    text-align: center;
+}
+
+.connectRight h3,
+.connectLeft h3,
+.connectRegisterRight h3,
+.connectRegisterLeft h3 {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    color: var(--textColor);
+}
+
+.connectRegisterLeft p {
+    color: var(--textColor)
+}
+
+.connectRight p {
+    margin: 0;
+    margin-bottom: 5px;
+    color: var(--textColor);
+}
+
+.connectRight a {
+    color: var(--colorPrimary);
+    font-size: 20px;
+    margin: 0;
+}
+
+.connectRight input,
+.connectRegisterLeft input {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-weight: 400;
+    background: rgb(224 194 115 / 35%);
+    color: white;
+}
+
+.connectRight input::placeholder,
+.connectRegisterLeft input::placeholder {
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.autoLogin {
+    background: var(--colorPrimary);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none;
+    transition: all 0.4s;
+    margin-top: 20px;
+}
+
+.autoLogin:hover {
+    transform: translateY(-5px);
+}
+
+.connectWalletRow {
+    border: 2px solid var(--colorPrimary) !important;
+    padding: 75px 50px;
+    border-radius: 20px;
+    /* margin-top: 40px !important; */
+}
+
+.registerButtons {
+    display: flex;
+}
+
+#login:hover {
+    color: var(--colorPrimary);
+}
+
+.viewing {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    border: none;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    flex: 1;
+    background: linear-gradient(to right,
+            #96792D, #C5A454, #F8E895, #D9BB6E, #F3D67F, #A88D46);
+    border: 1px solid transparent;
+}
+
+.bgOrange {
+    background: linear-gradient(to right,
+            #96792D, #C5A454, #F8E895, #D9BB6E, #F3D67F, #A88D46);
+
+}
+
+.viewing:hover {
+    background: transparent;
+    color: #C5A454;
+    border-color: #C5A454;
+
+}
+
+.connectRegisterRight p {
+    color: var(--textColor);
+}
+
+.connectRegisterRight p span {
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--colorPrimary);
+}
+
+.connectRegisterLeft a {
+    color: var(--colorPrimary);
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.connectRegisterLeft {
+    padding: 0 80px !important;
+}
+
+.connectRight {
+    padding: 0px 60px !important;
+}
+
+.connectWalletContainer {
+    padding: 20px !important;
+}
+
+@media (max-width: 767px) {
+    .connectWalletRow {
+        padding: 60px 20px;
+    }
+
+    .connectRegisterLeft {
+        padding: 0px 20px !important;
+    }
+
+    .connectRight {
+        padding: 0px !important;
+    }
+
+    .connectRight h3 {
+        margin-top: 25px;
+    }
+
+    .connectWalletRow {
+        margin-top: 30px !important;
+    }
+
+    .connectRegisterRight h3 {
+        margin-top: 30px;
+    }
+
+}
+
+.div {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+#bgImage {
+    background-image: url("./../../Images/bg2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.67);
+    background-blend-mode: overlay;
+    min-height: 100vh;
+}
+
+
+#logoContainer img {
+    width: 100px;
+    margin-top: 10px;
+    filter: brightness(1.2);
+}
+
+#logoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10;
+}
+
+.btnConnect {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    border: none;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    background: linear-gradient(to right,
+            #96792D, #C5A454, #F8E895, #D9BB6E, #F3D67F, #A88D46);
+    border: 1px solid transparent;
+    transition: background 0.4s;
+}
+
+.btnConnect:hover {
+    border-color: var(--colorPrimary);
+    color: var(--colorPrimary);
+    background: transparent;
+
+}
+
+#connectButtonAddress {
+    color: #f6e592;
+    font-size: 16px;
+    border: 1px solid #f6e592;
+    padding: 8px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#connectButtonAddress i {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.colorWhite {
+    color: whiten !important;
+}
+
+@media screen and (max-width: 340px) {
+    .connectRegisterLeft a {
+        font-size: 12px;
+    }
+
+    .connectWalletRow {
+        padding: 60px 10px;
+    }
+}
