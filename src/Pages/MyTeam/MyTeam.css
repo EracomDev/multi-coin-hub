@@ -77,3 +77,9 @@ th {
         line-height: 20px;
     }
 }
+
+@media (max-width: 500px) {
+    #myTeamCol p {
+        font-size: 12px;
+    }
+}

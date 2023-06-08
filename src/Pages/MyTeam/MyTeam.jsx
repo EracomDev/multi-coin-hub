@@ -51,10 +51,18 @@ const MyTeam = () => {
                 // console.log('business', parseFloat(business / 1e18));
                 // console.log('business2222', parseFloat(userInfo?.userInfo?.teamBusiness / 1e18));
                 let minor = parseFloat(userInfo?.userInfo?.teamBusiness / 1e18) - parseFloat(business / 1e18);
+                if (minor < 0) {
+                    minor = 0;
+                }
                 setMinorBusinessData(minor);
-                setBusinessData(parseFloat(business / 1e18))
+                let mysale = parseFloat(userInformation?.userInfo?.teamBusiness / 1e18);
+                let myBusiness = parseFloat(business / 1e18);
 
-
+                if (myBusiness > mysale) {
+                    setBusinessData(mysale);
+                } else {
+                    setBusinessData(parseFloat(business / 1e18));
+                }
                 setLoading(false)
             } catch (e) {
                 setLoading(false)
